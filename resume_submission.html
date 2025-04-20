@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Résumé Submission Conversation Prototype</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f9fa; padding: 1rem; }
+    .chat-container { max-width: 600px; margin: auto; }
+    .bubble { max-width: 80%; padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 16px; line-height: 1.4; }
+    .bubble.recruiter { background: #ecf0f1; align-self: flex-start; }
+    .bubble.candidate { background: #3498db; color: #fff; align-self: flex-end; }
+    .chat { display: flex; flex-direction: column; }
+    h1 { text-align: center; }
+    ul { margin: 0.5rem 0 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Résumé Submission Conversation</h1>
+    <div class="chat">
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant 🤖:</strong><br>
+        Hi Dev 👋! Jane spotted your “Real‑Time Analytics Dashboard” project and thinks you’d excel as a Data Scientist at TechCorp (J123).
+      </div>
+      <div class="bubble candidate">
+        <strong>Dev:</strong><br>
+        How did Jane’s team find me?
+      </div>
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant:</strong><br>
+        I ran an initial scan of your public profile:
+        <ul>
+          <li>Experience: 3 yrs building dashboards with Python & Dash</li>
+          <li>Skills overlap: Python ✔️, SQL ✔️, Data Viz ✔️, Communication ✔️</li>
+          <li>Fit score: 82% based on weighted skill matching and project relevance</li>
+        </ul>
+        To complete the evaluation and apply on Jane’s behalf, please upload your latest résumé.
+      </div>
+      <div class="bubble candidate">
+        <strong>Dev:</strong><br>
+        [Uploads “Dev_Park_Resume.pdf”]
+      </div>
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant:</strong><br>
+        Thanks! I’ve parsed:
+        <ul>
+          <li>Education: M.Sc. Data Science, Univ A</li>
+          <li>Work: Data Engineer @ AnalyticsCo (2019–22)</li>
+          <li>Projects: Real‑Time Dashboard; Predictive Maintenance Model</li>
+        </ul>
+        Ready to proceed? May I submit your application to TechCorp for Jane?
+      </div>
+      <div class="bubble candidate">
+        <strong>Dev:</strong><br>
+        Yes—please submit it.
+      </div>
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant:</strong><br>
+        Done! Your application is now with TechCorp, submitted under Jane Doe’s recommendation. Best of luck! 🎉
+      </div>
+    </div>
+  </div>
+</body>
+</html>

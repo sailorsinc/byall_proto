@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ByAll Recruiter Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">ByAll</div>
+    <div class="user-menu">Recruiter Jane Doe ▼</div>
+  </nav>
+
+  <main class="dashboard">
+    <header>
+      <h1>Job Posting: Data Scientist (J123)</h1>
+
+    </header>
+
+    <section class="table-section">
+      <h2>AI Matched Candidates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="padding-right: 50px;">Candidate</th>
+            <th>Match Score</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice R.</td>
+            <td>87%</td>
+            <td><span class="status ok">Consent Requested </span></td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Bob K.</td>
+            <td>75%</td>
+            <td><span class="status pending">Application Submitted</span></td>
+        
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td>Carla M.</td>
+            <td>73%</td>
+            <td><span class="status none">Matched </span></td>
+            
+            <td>
+              <button class="btn small primary">Get Consent</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section suggestions">
+      <h2>AI Hunted Candidates</h2>
+    <table>
+      <thead>
+        <tr>
+        <th style="padding-right: 50px;">Candidate</th>
+        <th style="padding-right: 50px;">Pre-Match Score</th>
+        <th style="padding-right: 50px;">Status</th>
+        <th style="padding-right: 50px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>Dev P.</td>
+        <td>82%</td>
+        <td><span class="status none">Resume Requested</span></td>
+        <td>
+        </td>
+        </tr>
+        <tr>
+        <td>Maria S.</td>
+        <td>79%</td>
+        <td><span class="status none">Hunted</span></td>
+        <td>
+          <button class="btn small">Get Résumé</button>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+  </main>
+
+</body>
+</html>

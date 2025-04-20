@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consent Conversation Prototype</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f9fa; padding: 1rem; }
+    .chat-container { max-width: 600px; margin: auto; }
+    .bubble { max-width: 80%; padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 16px; line-height: 1.4; }
+    .bubble.recruiter { background: #ecf0f1; align-self: flex-start; }
+    .bubble.candidate { background: #3498db; color: #fff; align-self: flex-end; }
+    .chat { display: flex; flex-direction: column; }
+    h1 { text-align: center; }
+    ul { margin: 0.5rem 0 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Consent Conversation</h1>
+    <div class="chat">
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant 🤖:</strong><br>
+        Hi Alice 👋! Jane Doe here—your trusted recruiter. I reviewed your 4 years at DataX, your Python expertise, and your ML publication, and I think you’d be a great fit for Jane’s Data Scientist opening at TechCorp (J123).
+      </div>
+      <div class="bubble candidate">
+        <strong>Alice:</strong><br>
+        Can you tell me more about the role?
+      </div>
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant:</strong><br>
+        Of course! TechCorp needs a Data Scientist to:
+        <ul>
+          <li>Build ML pipelines to predict customer churn</li>
+          <li>Analyze large datasets and present findings</li>
+          <li>Collaborate closely with product and engineering teams</li>
+        </ul>
+        You match because:
+        <ul>
+          <li>Your Python/SQL projects at DataX mirror their stack</li>
+          <li>Your “Behavior Modeling” paper aligns with their use case</li>
+        </ul>
+        May I, on Jane’s behalf, share your résumé and contact info with TechCorp? They only receive applications when you consent—no strings attached.
+      </div>
+      <div class="bubble candidate">
+        <strong>Alice:</strong><br>
+        Yes, please go ahead—I’d love to apply.
+      </div>
+      <div class="bubble recruiter">
+        <strong>Jane’s Assistant:</strong><br>
+        Great—Jane’s noted your consent. I’ll finalize the match and submit your application right away. Good luck from Jane and the team! 🍀
+      </div>
+    </div>
+  </div>
+</body>
+</html>
