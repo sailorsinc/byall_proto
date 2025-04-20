@@ -11,49 +11,45 @@
     <div class="logo">ByAll</div>
     <div class="user-menu">Recruiter Jane Doe ▼</div>
     <button class="btn small upload-resume">Upload Résumé</button>
+    <button class="btn small">View Résumés</button>
   </nav>
 
   <main class="dashboard">
-    <header>
-      <h1>Job Posting: Data Scientist (J123)</h1>
-
-    </header>
 
     <section class="table-section">
-      <h2>AI Matched Candidates</h2>
+      <h2>Matched Candidates</h2>
       <table>
         <thead>
           <tr>
-            <th style="padding-right: 50px;">Candidate</th>
-            <th>Match Score</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th>Candidate</th>
+            <th>Job Posting</th>
+            <th>Match Score</th>
+            <th>Status / Action</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Alice R.</td>
+            <td>Data Scientist (J123)</td>
             <td>87%</td>
-            <td><span class="status ok">Consent Requested </span></td>
             <td>
+              <button class="btn small primary">Submit Application</button>
             </td>
           </tr>
           <tr>
             <td>Bob K.</td>
+            <td>Machine Learning Engineer (J124)</td>
             <td>75%</td>
-            <td><span class="status pending">Application Submitted</span></td>
-        
             <td>
-
+              <span class="status pending">Application Submitted</span>
             </td>
           </tr>
           <tr>
             <td>Carla M.</td>
+            <td>Backend Developer (J125)</td>
             <td>73%</td>
-            <td><span class="status none">Matched </span></td>
-            
             <td>
-              <button class="btn small primary">Get Consent</button>
+              <button class="btn small primary">Submit Application</button>
             </td>
           </tr>
         </tbody>
@@ -61,34 +57,31 @@
     </section>
 
     <section class="table-section suggestions">
-      <h2>AI Hunted Candidates</h2>
-    <table>
-      <thead>
-        <tr>
-        <th style="padding-right: 50px;">Candidate</th>
-        <th style="padding-right: 50px;">Pre-Match Score</th>
-        <th style="padding-right: 50px;">Status</th>
-        <th style="padding-right: 50px;">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        <td>Dev P.</td>
-        <td>82%</td>
-        <td><span class="status none">Resume Requested</span></td>
-        <td>
-        </td>
-        </tr>
-        <tr>
-        <td>Maria S.</td>
-        <td>79%</td>
-        <td><span class="status none">Hunted</span></td>
-        <td>
-          <button class="btn small">Get Résumé</button>
-        </td>
-        </tr>
-      </tbody>
-    </table>
+      <h2>Hunted Candidates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Candidate</th>
+            <th>Job Posting</th>
+            <th>Pre-Match Score</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dev P.</td>
+            <td>Data Scientist (J123)</td>
+            <td>82%</td>
+            <td><span class="status none">To request Resume</span></td>
+          </tr>
+          <tr>
+            <td>Maria S.</td>
+            <td>Machine Learning Engineer (J124)</td>
+            <td>79%</td>
+            <td><span class="status none">Resume received</span></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 
